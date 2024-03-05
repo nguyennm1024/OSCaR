@@ -8,16 +8,16 @@ We are committed to making our research accessible and reproducible, and we unde
 
 Please stay tuned for updates. We will be releasing the code and dataset soon. Thank you for your interest and patience.
 
+For more details, you can access the paper [here](https://arxiv.org/abs/2402.17128).
+
+### Citation
+
 If you find our work useful, please consider citing it:
 
-
+```bibtex
 @article{nguyen2024oscar,
-title={OSCaR: Object State Captioning and State Change Representation},
-author={Nguyen, Nguyen and Bi, Jing and Vosoughi, Ali and Tian, Yapeng and Fazli, Pooyan and Xu, Chenliang},
-journal={arXiv preprint arXiv:2402.17128},
-year={2024}
+  title={OSCaR: Object State Captioning and State Change Representation},
+  author={Nguyen, Nguyen and Bi, Jing and Vosoughi, Ali and Tian, Yapeng and Fazli, Pooyan and Xu, Chenliang},
+  journal={arXiv preprint arXiv:2402.17128},
+  year={2024}
 }
-
-
-
-For more details, you can access the paper [here](https://arxiv.org/abs/2402.17128).
