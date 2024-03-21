@@ -15,9 +15,9 @@ For more details, you can access the paper [here](https://arxiv.org/abs/2402.171
 If you find our work useful, please consider citing it:
 
 ```bibtex
-@article{nguyen2024oscar,
+@inproceedings{nguyen2024oscar,
   title={OSCaR: Object State Captioning and State Change Representation},
   author={Nguyen, Nguyen and Bi, Jing and Vosoughi, Ali and Tian, Yapeng and Fazli, Pooyan and Xu, Chenliang},
-  journal={arXiv preprint arXiv:2402.17128},
+  booktitle={Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)},
   year={2024}
 }
