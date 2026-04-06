@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://aclanthology.org/2024.findings-naacl.226.pdf">Paper PDF</a> •
   <a href="https://arxiv.org/abs/2402.17128">arXiv</a> •
-  <a href="https://nguyennm1024.github.io/OSCaR/">Project Page</a> •
+  <a href="https://nguyennm1024.github.io/projects/oscar.html">Project Page</a> •
   <a href="https://github.com/nguyennm1024/OSCaR">GitHub</a> •
   <a href="https://huggingface.co/datasets/ali-vosoughi/oscar-dataset">Dataset</a> •
   <a href="https://huggingface.co/ali-vosoughi">Models</a>
@@ -82,7 +82,7 @@ Paper-level release facts:
 
 ## Project Links
 
-- Project page: [nguyennm1024.github.io/OSCaR](https://nguyennm1024.github.io/OSCaR/)
+- Project page: [nguyennm1024.github.io/projects/oscar](https://nguyennm1024.github.io/projects/oscar.html)
 - Paper PDF: [2024.findings-naacl.226.pdf](https://aclanthology.org/2024.findings-naacl.226.pdf)
 - arXiv: [arXiv:2402.17128](https://arxiv.org/abs/2402.17128)
 - Code: [github.com/nguyennm1024/OSCaR](https://github.com/nguyennm1024/OSCaR)
@@ -207,7 +207,7 @@ OSCaR is intentionally split across public surfaces:
 If you are landing here first, the project page is the shortest path to the
 paper, code, dataset, and weights:
 
-- [nguyennm1024.github.io/OSCaR](https://nguyennm1024.github.io/OSCaR/)
+- [nguyennm1024.github.io/projects/oscar](https://nguyennm1024.github.io/projects/oscar.html)
 
 ## Citation
 
