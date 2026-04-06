@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oscar-llava"
+version = "0.1.0"
+description = "OSCaR public code release for object state captioning and state change representation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Ali Vosoughi", email = "al.vosoughi@gmail.com" }
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "torch==2.0.1",
+  "torchvision==0.15.2",
+  "transformers==4.31.0",
+  "tokenizers>=0.12.1,<0.14",
+  "sentencepiece==0.1.99",
+  "shortuuid",
+  "accelerate==0.21.0",
+  "peft==0.4.0",
+  "bitsandbytes==0.41.0",
+  "pydantic>=1,<2",
+  "markdown2[all]",
+  "numpy",
+  "requests",
+  "httpx==0.24.0",
+  "uvicorn",
+  "fastapi",
+  "einops==0.6.1",
+  "einops-exts==0.0.4",
+  "timm==0.6.13",
+  "pandas",
+  "Pillow",
+]
+
+[project.optional-dependencies]
+train = [
+  "deepspeed==0.9.5",
+  "ninja",
+  "wandb",
+]
+inference = [
+  "gradio==3.35.2",
+  "gradio_client==0.2.9",
+]
+eval = [
+  "nltk",
+  "rouge==1.0.1",
+  "scikit-learn==1.2.2",
+]
+release = [
+  "huggingface_hub>=0.26.0",
+  "datasets>=2.19.0",
+  "pyarrow",
+  "pyyaml",
+  "jinja2",
+  "pypdf",
+]
+dev = [
+  "pytest",
+  "ruff",
+]
+
+[project.urls]
+Homepage = "https://github.com/nguyennm1024/OSCaR"
+Repository = "https://github.com/nguyennm1024/OSCaR"
+Paper = "https://arxiv.org/abs/2402.17128"
+
+[tool.setuptools.packages.find]
+include = ["llava*"]
+
+[tool.wheel]
+exclude = ["data*", "datasets*", "checkpoints*", "outputs*", "results*"]

@@ -1,55 +1,83 @@
 # OSCaR: Object State Captioning and State Change Representation
 
-OSCaR is a benchmark and code release for studying object state captioning and
-state change representation in egocentric video.
+OSCaR is the public code release for the NAACL 2024 paper
+[OSCaR: Object State Captioning and State Change Representation](https://arxiv.org/abs/2402.17128).
 
-This repository is being prepared as the public codebase for:
+This repository publishes the LLaVA-derived training, inference, evaluation,
+and data-preparation code used for OSCaR, alongside release-grade
+documentation for the corresponding Hugging Face dataset and model repos.
 
-- training and fine-tuning
-- inference and evaluation
-- data preparation utilities
-- reproducibility documentation
+## Release Surfaces
 
-The corresponding dataset and model weights are being organized as separate
-Hugging Face releases so the public code repository stays focused and usable.
+- Code: `https://github.com/nguyennm1024/OSCaR`
+- Dataset: `https://huggingface.co/datasets/ali-vosoughi/oscar-dataset`
+- Models: `https://huggingface.co/ali-vosoughi`
+- Project page: `https://nguyennm1024.github.io/OSCaR/`
 
-## Paper
+## What This Repo Contains
 
-- NAACL 2024 paper: [OSCaR: Object State Captioning and State Change Representation](https://arxiv.org/abs/2402.17128)
+- projector pretraining code for the LLaVA v1.5 stack
+- OSCaR-only LoRA fine-tuning scripts for Vicuna 7B and 13B
+- mixed-data 13B LoRA fine-tuning that combines OSCaR with LLaVA v1.5 mix data
+- benchmark and open-world inference entrypoints
+- text-generation evaluation scripts
+- dataset-preparation utilities used around manifests, splits, and output conversion
 
-## Release Plan
+## Reported Training Configuration
 
-The public release is split into three parts:
+The public scripts reflect the paper and local training artifacts:
 
-1. GitHub code repository
-2. Hugging Face dataset repository
-3. Hugging Face model repository or repositories
+- base models: `lmsys/vicuna-7b-v1.5` and `lmsys/vicuna-13b-v1.5`
+- vision tower: `openai/clip-vit-large-patch14-336`
+- LoRA rank: `128`
+- LoRA alpha: `256`
+- epochs: `1`
+- learning rate: `2e-4`
+- batch size per device: `16` for OSCaR-only runs
+- max sequence length: `2048`
 
-This repository is the code component of that release.
+The 13B mixed-data run also has a public script matching the logged local run:
 
-## Repository Goals
+- per-device batch size: `8`
+- gradient accumulation: `2`
+- save steps: `300`
 
-- provide reproducible training and inference scripts
-- document the dataset and split structure used in experiments
-- make evaluation and state-change generation workflows easier to run
-- keep large assets out of GitHub and in the appropriate Hugging Face repos
+## Quickstart
 
-## Setup
+Environment setup is UV-based:
 
-Environment guidance lives in [docs/setup.md](docs/setup.md).
+```bash
+uv venv --python 3.10 .venv
+source .venv/bin/activate
+uv pip install -e .[train,inference,eval,release]
+```
 
-Release structure guidance lives in [docs/release-layout.md](docs/release-layout.md).
+Detailed setup: [INSTALL.md](INSTALL.md)  
+Training guide: [TRAIN.md](TRAIN.md)  
+Inference guide: [INFERENCE.md](INFERENCE.md)  
+Evaluation guide: [EVAL.md](EVAL.md)
+Release guide: [RELEASE.md](RELEASE.md)
 
-Contribution guidance lives in [CONTRIBUTING.md](CONTRIBUTING.md).
+## Repository Layout
 
-## Current Status
+- `llava/`: model, training, evaluation, and serving code
+- `scripts/train/`: projector pretraining, LoRA fine-tuning, merge, and cluster launcher examples
+- `scripts/infer/`: public inference wrappers for benchmark and open-world evaluation
+- `scripts/eval/`: benchmark metric scripts
+- `scripts/data/`: manifest, split, QA-generation, and output-conversion utilities
+- `scripts/release/`: Hugging Face card generation and upload helpers
+- `configs/deepspeed/`: public DeepSpeed configs
+- `docs/`: release docs and GitHub Pages content
 
-The repository has started public-release hardening. The next steps are:
+## Notes On Dataset And Weights
 
-- import the cleaned training, inference, and evaluation code
-- remove private or cluster-specific assumptions from scripts
-- remove secrets and internal-only helper artifacts
-- document reproducible paths for model and dataset release
+This repository is intentionally code-first. Large assets are kept out of GitHub:
+
+- OSCaR dataset assets and manifests live in the Hugging Face dataset repo
+- projector checkpoints, adapters, and merged-model release artifacts live in the Hugging Face model repos
+
+The code here expects those assets to be mounted or downloaded locally and then
+referenced through CLI arguments or environment variables.
 
 ## Citation
 

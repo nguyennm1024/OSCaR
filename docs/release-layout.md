@@ -1,38 +1,39 @@
 # Release Layout
 
-OSCaR is being prepared as a multi-repository public release.
+OSCaR is released across GitHub and Hugging Face.
 
 ## GitHub Code Repository
 
-This repository is intended to contain:
+This repository contains:
 
-- training scripts
-- inference scripts
-- evaluation scripts
-- data preparation utilities
+- training code and launch scripts
+- inference and model-serving code
+- evaluation code
+- data-preparation utilities
 - reproducibility documentation
 
-This repository should not store large checkpoints or raw datasets.
+It should not contain:
+
+- raw dataset payloads
+- model checkpoints or adapter weights
+- generated outputs or local logs
 
 ## Hugging Face Dataset Repository
 
-The dataset release should contain:
+Dataset repo: `ali-vosoughi/oscar-dataset`
 
-- dataset manifests
-- split metadata
-- dataset card documentation
-- redistributable image assets, if licensing permits
+Intended contents:
 
-## Hugging Face Model Repository
+- OSCaR image assets
+- training manifests
+- benchmark and split metadata
+- dataset card and normalized metadata tables
 
-Model releases should contain only the publishable artifacts for each variant,
-for example:
+## Hugging Face Model Repositories
 
-- `adapter_model.bin`
-- `adapter_config.json`
-- `config.json`
-- `non_lora_trainables.bin`
-- projector checkpoints such as `mm_projector.bin`
+Model repos under `ali-vosoughi` are intended to publish:
 
-DeepSpeed resume state and nested training checkpoints should be excluded from
-public model repos.
+- projector checkpoints
+- adapter-only OSCaR releases
+- adapter-only mixed-data releases
+- merged full-model exports when redistribution is compatible
