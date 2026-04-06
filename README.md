@@ -91,3 +91,20 @@ If OSCaR is useful in your work, please cite:
   year={2024}
 }
 ```
+
+## Authors
+
+- [Nguyen Nguyen](https://nguyennm1024.github.io/)
+- [Jing Bi](https://jing.vision/)
+- [Ali Vosoughi](https://alivosoughi.com/)
+- [Yapeng Tian](http://www.yapengtian.com/)
+- [Pooyan Fazli](http://pooyanfazli.com/)
+- [Chenliang Xu](http://www.cs.rochester.edu/~cxu22/)
+
+## Acknowledgments
+
+OSCaR builds on the LLaVA codebase and training stack. We thank the LLaVA
+team for their strong open-source release and the foundation it provided for
+this work.
+
+This project was sponsored by DARPA under Contract `HR00112220003`.
