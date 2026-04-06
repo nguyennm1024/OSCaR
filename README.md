@@ -1,8 +1,8 @@
 # OSCaR: Object State Captioning and State Change Representation
 
-Accepted NAACL 2024 paper: `https://aclanthology.org/2024.findings-naacl.226/`
+Accepted NAACL 2024 paper: [NAACL 2024 Findings version](https://aclanthology.org/2024.findings-naacl.226/)
 
-Project page: `https://nguyennm1024.github.io/OSCaR/`
+Project page: [nguyennm1024.github.io/OSCaR](https://nguyennm1024.github.io/OSCaR/)
 
 OSCaR is the public code release for the NAACL 2024 paper
 [OSCaR: Object State Captioning and State Change Representation](https://aclanthology.org/2024.findings-naacl.226/).
@@ -27,18 +27,18 @@ Paper-level release facts:
 
 ## Project Links
 
-- Project page: `https://nguyennm1024.github.io/OSCaR/`
-- Paper: `https://aclanthology.org/2024.findings-naacl.226/`
-- Code: `https://github.com/nguyennm1024/OSCaR`
-- Dataset: `https://huggingface.co/datasets/ali-vosoughi/oscar-dataset`
+- Project page: [nguyennm1024.github.io/OSCaR](https://nguyennm1024.github.io/OSCaR/)
+- Paper: [ACL Anthology entry](https://aclanthology.org/2024.findings-naacl.226/)
+- Code: [github.com/nguyennm1024/OSCaR](https://github.com/nguyennm1024/OSCaR)
+- Dataset: [ali-vosoughi/oscar-dataset](https://huggingface.co/datasets/ali-vosoughi/oscar-dataset)
 
 Model repos:
 
-- `https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-7b-oscar-adapter`
-- `https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-13b-oscar-adapter`
-- `https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-13b-mixed-adapter`
-- `https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-7b-projector`
-- `https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-13b-projector`
+- [7B OSCaR adapter](https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-7b-oscar-adapter)
+- [13B OSCaR adapter](https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-13b-oscar-adapter)
+- [13B mixed adapter](https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-13b-mixed-adapter)
+- [7B projector](https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-7b-projector)
+- [13B projector](https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-13b-projector)
 
 ## Authors
 
@@ -126,7 +126,7 @@ OSCaR is intentionally split across public surfaces:
 If you are landing here first, the project page is the shortest path to the
 paper, code, dataset, and weights:
 
-- `https://nguyennm1024.github.io/OSCaR/`
+- [nguyennm1024.github.io/OSCaR](https://nguyennm1024.github.io/OSCaR/)
 
 ## Citation
 
