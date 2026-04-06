@@ -30,6 +30,22 @@
         margin: 0 auto;
         padding: 32px 0 72px;
       }
+      .topbar {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+      }
+      .toplink {
+        padding: 10px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 248, 240, 0.86);
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
       .hero {
         display: grid;
         gap: 24px;
@@ -100,6 +116,16 @@
         font-size: 14px;
         line-height: 1.5;
       }
+      .teaser {
+        margin-top: 28px;
+        overflow: hidden;
+        padding: 0;
+      }
+      .teaser img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
       .section {
         margin-top: 28px;
         padding: 26px 28px;
@@ -144,6 +170,13 @@
   </head>
   <body>
     <main class="shell">
+      <div class="topbar">
+        <a class="toplink" href="https://aclanthology.org/2024.findings-naacl.226.pdf">Paper PDF</a>
+        <a class="toplink" href="https://arxiv.org/abs/2402.17128">arXiv</a>
+        <a class="toplink" href="https://github.com/nguyennm1024/OSCaR">GitHub</a>
+        <a class="toplink" href="https://huggingface.co/datasets/ali-vosoughi/oscar-dataset">Dataset</a>
+        <a class="toplink" href="https://huggingface.co/ali-vosoughi">Models</a>
+      </div>
       <section class="hero">
         <div class="panel hero-copy">
           <div class="eyebrow">NAACL 2024</div>
@@ -155,7 +188,8 @@
           </p>
           <div class="actions">
             <a class="button" href="https://github.com/nguyennm1024/OSCaR">GitHub Repo</a>
-            <a class="button" href="https://aclanthology.org/2024.findings-naacl.226/">Paper</a>
+            <a class="button" href="https://aclanthology.org/2024.findings-naacl.226.pdf">Paper PDF</a>
+            <a class="button" href="https://arxiv.org/abs/2402.17128">arXiv</a>
             <a class="button" href="https://huggingface.co/datasets/ali-vosoughi/oscar-dataset">Dataset</a>
             <a class="button" href="https://huggingface.co/ali-vosoughi">Models</a>
           </div>
@@ -182,6 +216,10 @@
             <div class="metric-note">Vicuna 7B and 13B with CLIP ViT-L/336 and LoRA rank <span class="mono">128</span>.</div>
           </div>
         </div>
+      </section>
+
+      <section class="panel teaser">
+        <img src="assets/oscar-teaser.svg" alt="OSCaR teaser showing source datasets, pipeline, and public release artifacts" />
       </section>
 
       <section class="panel section">

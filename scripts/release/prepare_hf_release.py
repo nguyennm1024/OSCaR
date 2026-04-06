@@ -213,6 +213,8 @@ bash scripts/train/finetune_v1_5_13b_oscar_lora.sh
 ## Provenance
 
 - Source corpora: [EPIC-KITCHENS](https://epic-kitchens.github.io/) and [Ego4D](https://ego4d-data.org/), as described in the paper.
+- Paper PDF: `https://aclanthology.org/2024.findings-naacl.226.pdf`
+- arXiv: `https://arxiv.org/abs/2402.17128`
 - Public code: `nguyennm1024/OSCaR`
 - Public model namespace: `{namespace}`
 - Dataset repo: `{namespace}/{dataset_repo}`
@@ -306,7 +308,8 @@ Example:
 
 - Code: `https://github.com/nguyennm1024/OSCaR`
 - Dataset: `https://huggingface.co/datasets/{namespace}/oscar-dataset`
-- Paper: `https://aclanthology.org/2024.findings-naacl.226/`
+- Paper PDF: `https://aclanthology.org/2024.findings-naacl.226.pdf`
+- arXiv: `https://arxiv.org/abs/2402.17128`
 """
 
 

@@ -71,9 +71,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/nguyennm1024/OSCaR"
+Homepage = "https://nguyennm1024.github.io/OSCaR/"
 Repository = "https://github.com/nguyennm1024/OSCaR"
-Paper = "https://aclanthology.org/2024.findings-naacl.226/"
+Paper = "https://aclanthology.org/2024.findings-naacl.226.pdf"
+Preprint = "https://arxiv.org/abs/2402.17128"
 
 [tool.setuptools.packages.find]
 include = ["llava*"]
