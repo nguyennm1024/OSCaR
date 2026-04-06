@@ -1,7 +1,11 @@
 # OSCaR: Object State Captioning and State Change Representation
 
+Accepted NAACL 2024 paper: `https://aclanthology.org/2024.findings-naacl.226/`
+
+Project page: `https://nguyennm1024.github.io/OSCaR/`
+
 OSCaR is the public code release for the NAACL 2024 paper
-[OSCaR: Object State Captioning and State Change Representation](https://arxiv.org/abs/2402.17128).
+[OSCaR: Object State Captioning and State Change Representation](https://aclanthology.org/2024.findings-naacl.226/).
 
 This repository publishes the LLaVA-derived training, inference, evaluation,
 and data-preparation code used for OSCaR, alongside release-grade
@@ -24,7 +28,7 @@ Paper-level release facts:
 ## Project Links
 
 - Project page: `https://nguyennm1024.github.io/OSCaR/`
-- Paper: `https://arxiv.org/abs/2402.17128`
+- Paper: `https://aclanthology.org/2024.findings-naacl.226/`
 - Code: `https://github.com/nguyennm1024/OSCaR`
 - Dataset: `https://huggingface.co/datasets/ali-vosoughi/oscar-dataset`
 

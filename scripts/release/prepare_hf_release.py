@@ -273,7 +273,7 @@ Example:
 
 - Code: `https://github.com/nguyennm1024/OSCaR`
 - Dataset: `https://huggingface.co/datasets/{namespace}/oscar-dataset`
-- Paper: `https://arxiv.org/abs/2402.17128`
+- Paper: `https://aclanthology.org/2024.findings-naacl.226/`
 """
 
 
