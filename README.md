@@ -20,6 +20,21 @@ This repository publishes the LLaVA-derived training, inference, evaluation,
 and data-preparation code used for OSCaR, alongside release-grade
 documentation for the corresponding Hugging Face dataset and model repos.
 
+## Start Here
+
+This public release includes everything needed to use OSCaR:
+
+- Code: this GitHub repo contains training, inference, evaluation, and data-preparation code.
+- Dataset: [ali-vosoughi/oscar-dataset](https://huggingface.co/datasets/ali-vosoughi/oscar-dataset) contains the released OSCaR assets, manifests, metadata, and splits.
+- Weights: [ali-vosoughi on Hugging Face](https://huggingface.co/ali-vosoughi) contains the released OSCaR model artifacts.
+
+Released weights are:
+
+- LoRA adapters: 7B OSCaR, 13B OSCaR, and 13B mixed.
+- Projector checkpoints: 7B and 13B.
+
+Merged full-model checkpoints are not part of the current OSCaR release.
+
 ## Project Overview
 
 OSCaR studies object state captioning and state change representation for
