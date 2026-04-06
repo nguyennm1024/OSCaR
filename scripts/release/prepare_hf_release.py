@@ -224,6 +224,13 @@ bash scripts/train/finetune_v1_5_13b_oscar_lora.sh
 We thank the EPIC-KITCHENS and Ego4D teams for releasing the source datasets
 from which the OSCaR frames and clips are derived.
 
+Approved for public release; distribution is unlimited.
+
+This work has been supported by the Defense Advanced Research Projects Agency
+(DARPA) under Contract `HR00112220003`. The content of the information does not
+necessarily reflect the position of the Government, and no official endorsement
+should be inferred.
+
 ## Citation
 
 ```bibtex
@@ -310,6 +317,15 @@ Example:
 - Dataset: `https://huggingface.co/datasets/{namespace}/oscar-dataset`
 - Paper PDF: `https://aclanthology.org/2024.findings-naacl.226.pdf`
 - arXiv: `https://arxiv.org/abs/2402.17128`
+
+## Acknowledgments
+
+Approved for public release; distribution is unlimited.
+
+This work has been supported by the Defense Advanced Research Projects Agency
+(DARPA) under Contract `HR00112220003`. The content of the information does not
+necessarily reflect the position of the Government, and no official endorsement
+should be inferred.
 """
 
 

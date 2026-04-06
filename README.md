@@ -189,4 +189,9 @@ OSCaR also builds on source video data from the
 [Ego4D](https://ego4d-data.org/) projects. We thank those teams for creating
 and releasing the datasets from which the OSCaR frames and clips are derived.
 
-This project was sponsored by DARPA under Contract `HR00112220003`.
+Approved for public release; distribution is unlimited.
+
+This work has been supported by the Defense Advanced Research Projects Agency
+(DARPA) under Contract `HR00112220003`. The content of the information does not
+necessarily reflect the position of the Government, and no official endorsement
+should be inferred.
