@@ -7,12 +7,43 @@ This repository publishes the LLaVA-derived training, inference, evaluation,
 and data-preparation code used for OSCaR, alongside release-grade
 documentation for the corresponding Hugging Face dataset and model repos.
 
-## Release Surfaces
+## Project Overview
 
+OSCaR studies object state captioning and state change representation for
+egocentric video. The public release packages the training and inference code,
+the Hugging Face dataset and model repos, and the GitHub Pages project site for
+the NAACL 2024 paper release.
+
+Paper-level release facts:
+
+- annotated segments reported in the paper: `14,084`
+- human-verified benchmark videos: `500`
+- LLaVA fine-tuning entries in the preserved OSCaR manifest: `28,308`
+- backbone family: `LLaVA v1.5` with `Vicuna 7B/13B` and `CLIP ViT-L/336`
+
+## Project Links
+
+- Project page: `https://nguyennm1024.github.io/OSCaR/`
+- Paper: `https://arxiv.org/abs/2402.17128`
 - Code: `https://github.com/nguyennm1024/OSCaR`
 - Dataset: `https://huggingface.co/datasets/ali-vosoughi/oscar-dataset`
-- Models: `https://huggingface.co/ali-vosoughi`
-- Project page: `https://nguyennm1024.github.io/OSCaR/`
+
+Model repos:
+
+- `https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-7b-oscar-adapter`
+- `https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-13b-oscar-adapter`
+- `https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-13b-mixed-adapter`
+- `https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-7b-projector`
+- `https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-13b-projector`
+
+## Authors
+
+- [Nguyen Nguyen](https://nguyennm1024.github.io/)
+- [Jing Bi](https://jing.vision/)
+- [Ali Vosoughi](https://alivosoughi.com/)
+- [Yapeng Tian](http://www.yapengtian.com/)
+- [Pooyan Fazli](http://pooyanfazli.com/)
+- [Chenliang Xu](http://www.cs.rochester.edu/~cxu22/)
 
 ## What This Repo Contains
 
@@ -55,7 +86,7 @@ uv pip install -e .[train,inference,eval,release]
 Detailed setup: [INSTALL.md](INSTALL.md)  
 Training guide: [TRAIN.md](TRAIN.md)  
 Inference guide: [INFERENCE.md](INFERENCE.md)  
-Evaluation guide: [EVAL.md](EVAL.md)
+Evaluation guide: [EVAL.md](EVAL.md)  
 Release guide: [RELEASE.md](RELEASE.md)
 
 ## Repository Layout
@@ -79,6 +110,20 @@ This repository is intentionally code-first. Large assets are kept out of GitHub
 The code here expects those assets to be mounted or downloaded locally and then
 referenced through CLI arguments or environment variables.
 
+## Public Release Structure
+
+OSCaR is intentionally split across public surfaces:
+
+- this GitHub repository for code, install instructions, and reproducibility docs
+- the Hugging Face dataset repo for released OSCaR assets and metadata
+- the Hugging Face model repos for projector checkpoints and adapter weights
+- the project page for paper-oriented presentation and public links
+
+If you are landing here first, the project page is the shortest path to the
+paper, code, dataset, and weights:
+
+- `https://nguyennm1024.github.io/OSCaR/`
+
 ## Citation
 
 If OSCaR is useful in your work, please cite:
@@ -91,15 +136,6 @@ If OSCaR is useful in your work, please cite:
   year={2024}
 }
 ```
-
-## Authors
-
-- [Nguyen Nguyen](https://nguyennm1024.github.io/)
-- [Jing Bi](https://jing.vision/)
-- [Ali Vosoughi](https://alivosoughi.com/)
-- [Yapeng Tian](http://www.yapengtian.com/)
-- [Pooyan Fazli](http://pooyanfazli.com/)
-- [Chenliang Xu](http://www.cs.rochester.edu/~cxu22/)
 
 ## Acknowledgments
 
