@@ -224,6 +224,24 @@
       </section>
 
       <section class="panel section">
+        <h2>Source Datasets</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>EPIC-KITCHENS</h3>
+            <p><a href="https://epic-kitchens.github.io/">Official dataset page</a></p>
+          </article>
+          <article class="card">
+            <h3>Ego4D</h3>
+            <p><a href="https://ego4d-data.org/">Official dataset page</a></p>
+          </article>
+          <article class="card">
+            <h3>Provenance</h3>
+            <p>The released OSCaR frames and clip-level assets are derived from EPIC-KITCHENS and Ego4D source videos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel section">
         <h2>Quickstart</h2>
         <p>Install the public environment with UV:</p>
         <p class="mono">uv venv --python 3.10 .venv && source .venv/bin/activate && uv pip install -e .[train,inference,eval,release]</p>
@@ -251,6 +269,12 @@
           OSCaR builds on the LLaVA codebase and training stack. We thank the
           LLaVA team for their open-source release and the strong baseline it
           provided for this work.
+        </p>
+        <p>
+          OSCaR also builds on source video data from
+          <a href="https://epic-kitchens.github.io/">EPIC-KITCHENS</a> and
+          <a href="https://ego4d-data.org/">Ego4D</a>. We thank those teams for
+          releasing the datasets from which the OSCaR frames and clips are derived.
         </p>
         <p>
           This project was sponsored by DARPA under Contract

@@ -36,8 +36,9 @@ def upload_step(
     state_path: Path,
     allow_patterns: list[str] | None = None,
     ignore_patterns: list[str] | None = None,
+    always_upload: bool = False,
 ) -> None:
-    if step_name in state["completed"]:
+    if not always_upload and step_name in state["completed"]:
         print(f"Skipping completed step: {step_name}")
         return
 
@@ -51,8 +52,9 @@ def upload_step(
         ignore_patterns=ignore_patterns,
         commit_message=f"Upload {step_name}",
     )
-    state["completed"].append(step_name)
-    save_state(state_path, state)
+    if not always_upload:
+        state["completed"].append(step_name)
+        save_state(state_path, state)
     print(f"Completed step: {step_name}")
 
 
@@ -107,6 +109,7 @@ def main() -> None:
         state_path=state_path,
         allow_patterns=["README.md"],
         ignore_patterns=ignore_patterns,
+        always_upload=True,
     )
 
     for name, path_in_repo in [
@@ -128,6 +131,7 @@ def main() -> None:
             state=state,
             state_path=state_path,
             ignore_patterns=ignore_patterns,
+            always_upload=True,
         )
 
     data_root = dataset_root / "data" / "object-state-data"

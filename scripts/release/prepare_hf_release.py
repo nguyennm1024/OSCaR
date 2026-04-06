@@ -111,6 +111,8 @@ This release packages the preserved OSCaR image assets, fine-tuning manifests,
 benchmark split metadata, and state-caption sidecars used around the LLaVA-based
 training and evaluation workflow published in the
 [OSCaR GitHub repository](https://github.com/nguyennm1024/OSCaR).
+The released OSCaR frames and clip-level assets are derived from the
+EPIC-KITCHENS and Ego4D source datasets.
 
 ## Release Summary
 
@@ -134,6 +136,14 @@ training and evaluation workflow published in the
 - `annotations/question-answers-clean/`: optional QA sidecars.
 - `annotations/conversation-clean/`: optional conversation sidecars.
 - `eval/openworld.json` and `eval/openworld-epic.json`: open-world evaluation prompts/metadata.
+
+## Source Datasets
+
+- [EPIC-KITCHENS](https://epic-kitchens.github.io/)
+- [Ego4D](https://ego4d-data.org/)
+
+OSCaR is a derived dataset release built on top of frames and clips sourced from
+EPIC-KITCHENS and Ego4D.
 
 ## Directory Layout
 
@@ -184,10 +194,15 @@ bash scripts/train/finetune_v1_5_13b_oscar_lora.sh
 
 ## Provenance
 
-- Source corpora: EPIC-KITCHENS and Ego4D, as described in the paper.
+- Source corpora: [EPIC-KITCHENS](https://epic-kitchens.github.io/) and [Ego4D](https://ego4d-data.org/), as described in the paper.
 - Public code: `nguyennm1024/OSCaR`
 - Public model namespace: `{namespace}`
 - Dataset repo: `{namespace}/{dataset_repo}`
+
+## Acknowledgments
+
+We thank the EPIC-KITCHENS and Ego4D teams for releasing the source datasets
+from which the OSCaR frames and clips are derived.
 
 ## Citation
 

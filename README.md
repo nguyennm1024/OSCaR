@@ -17,6 +17,8 @@ OSCaR studies object state captioning and state change representation for
 egocentric video. The public release packages the training and inference code,
 the Hugging Face dataset and model repos, and the GitHub Pages project site for
 the NAACL 2024 paper release.
+The released OSCaR frames and clip-level assets are derived from the
+EPIC-KITCHENS and Ego4D source datasets.
 
 Paper-level release facts:
 
@@ -39,6 +41,15 @@ Model repos:
 - [13B mixed adapter](https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-13b-mixed-adapter)
 - [7B projector](https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-7b-projector)
 - [13B projector](https://huggingface.co/ali-vosoughi/oscar-llava-v1.5-13b-projector)
+
+## Source Datasets
+
+- [EPIC-KITCHENS](https://epic-kitchens.github.io/)
+- [Ego4D](https://ego4d-data.org/)
+
+OSCaR is built from clips and frames sourced from these egocentric video
+datasets. The public OSCaR dataset release should be understood as a derived
+release built on top of EPIC-KITCHENS and Ego4D assets.
 
 ## Authors
 
@@ -146,5 +157,10 @@ If OSCaR is useful in your work, please cite:
 OSCaR builds on the LLaVA codebase and training stack. We thank the LLaVA
 team for their strong open-source release and the foundation it provided for
 this work.
+
+OSCaR also builds on source video data from the
+[EPIC-KITCHENS](https://epic-kitchens.github.io/) and
+[Ego4D](https://ego4d-data.org/) projects. We thank those teams for creating
+and releasing the datasets from which the OSCaR frames and clips are derived.
 
 This project was sponsored by DARPA under Contract `HR00112220003`.
