@@ -71,7 +71,7 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://nguyennm1024.github.io/projects/oscar.html"
+Homepage = "https://nguyennm1024.github.io/OSCaR/"
 Repository = "https://github.com/nguyennm1024/OSCaR"
 Paper = "https://aclanthology.org/2024.findings-naacl.226.pdf"
 Preprint = "https://arxiv.org/abs/2402.17128"

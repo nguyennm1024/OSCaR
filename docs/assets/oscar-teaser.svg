@@ -28,66 +28,66 @@
     <rect x="116" y="112" width="1368" height="206" rx="28" fill="url(#panel)" stroke="#D9C5B0"/>
   </g>
   <rect x="150" y="146" width="150" height="38" rx="19" fill="#F1D7BF"/>
-  <text x="225" y="171" text-anchor="middle" fill="#7C2D12" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="2">NAACL 2024</text>
+  <text x="225" y="171" text-anchor="middle" fill="#7C2D12" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="2" textLength="120" lengthAdjust="spacingAndGlyphs">NAACL 2024</text>
   <text x="150" y="248" fill="#1F1A17" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700">OSCaR</text>
-  <text x="152" y="278" fill="#5E5044" font-family="Georgia, 'Times New Roman', serif" font-size="22">Object State Captioning and State Change Representation</text>
-  <text x="152" y="306" fill="#5E5044" font-family="Georgia, 'Times New Roman', serif" font-size="22">for egocentric video</text>
+  <text x="152" y="282" fill="#5E5044" font-family="Georgia, 'Times New Roman', serif" font-size="22" textLength="680" lengthAdjust="spacingAndGlyphs">Object State Captioning and State Change Representation</text>
+  <text x="152" y="310" fill="#5E5044" font-family="Georgia, 'Times New Roman', serif" font-size="22">for egocentric video</text>
 
   <!-- Top-right stats -->
   <g>
     <rect x="980" y="140" width="210" height="58" rx="16" fill="#FFF7ED" stroke="#D9C5B0"/>
-    <text x="1085" y="176" text-anchor="middle" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">14,084 segments</text>
+    <text x="1085" y="176" text-anchor="middle" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" textLength="180" lengthAdjust="spacingAndGlyphs">14,084 segments</text>
     <rect x="1210" y="140" width="244" height="58" rx="16" fill="#FFF7ED" stroke="#D9C5B0"/>
-    <text x="1332" y="176" text-anchor="middle" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">500 benchmark videos</text>
+    <text x="1332" y="176" text-anchor="middle" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" textLength="210" lengthAdjust="spacingAndGlyphs">500 benchmark videos</text>
     <rect x="980" y="216" width="210" height="58" rx="16" fill="#FFF7ED" stroke="#D9C5B0"/>
-    <text x="1085" y="252" text-anchor="middle" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">28,308 entries</text>
+    <text x="1085" y="252" text-anchor="middle" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" textLength="160" lengthAdjust="spacingAndGlyphs">28,308 entries</text>
     <rect x="1210" y="216" width="244" height="58" rx="16" fill="#FFF7ED" stroke="#D9C5B0"/>
-    <text x="1332" y="252" text-anchor="middle" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">LLaVA 1.5 + Vicuna</text>
+    <text x="1332" y="252" text-anchor="middle" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" textLength="200" lengthAdjust="spacingAndGlyphs">LLaVA 1.5 + Vicuna</text>
   </g>
 
   <!-- Three bottom panels -->
   <g filter="url(#shadow)">
-    <rect x="116" y="364" width="340" height="368" rx="28" fill="url(#panel)" stroke="#D9C5B0"/>
-    <rect x="496" y="364" width="560" height="368" rx="28" fill="url(#panel)" stroke="#D9C5B0"/>
-    <rect x="1096" y="364" width="388" height="388" rx="28" fill="url(#panel)" stroke="#D9C5B0"/>
+    <rect x="116" y="364" width="340" height="380" rx="28" fill="url(#panel)" stroke="#D9C5B0"/>
+    <rect x="496" y="364" width="560" height="380" rx="28" fill="url(#panel)" stroke="#D9C5B0"/>
+    <rect x="1096" y="364" width="388" height="380" rx="28" fill="url(#panel)" stroke="#D9C5B0"/>
   </g>
 
   <!-- Column headers -->
-  <text x="148" y="414" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.6">SOURCE DATASETS</text>
-  <text x="528" y="414" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.6">OSCAR PIPELINE</text>
-  <text x="1128" y="414" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.6">PUBLIC RELEASE</text>
+  <text x="148" y="414" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="1.6">SOURCE DATASETS</text>
+  <text x="528" y="414" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="1.6">OSCAR PIPELINE</text>
+  <text x="1128" y="414" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="1.6">PUBLIC RELEASE</text>
 
   <!-- Source Datasets -->
   <rect x="148" y="444" width="276" height="104" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
-  <text x="178" y="481" fill="#1F1A17" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700">EPIC-KITCHENS</text>
-  <text x="178" y="515" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="17">egocentric action data and</text>
-  <text x="178" y="538" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="17">human-verified benchmark split</text>
+  <text x="178" y="481" fill="#1F1A17" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" textLength="240" lengthAdjust="spacingAndGlyphs">EPIC-KITCHENS</text>
+  <text x="178" y="515" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="16" textLength="230" lengthAdjust="spacingAndGlyphs">egocentric action data and</text>
+  <text x="178" y="536" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="16" textLength="248" lengthAdjust="spacingAndGlyphs">human-verified benchmark split</text>
 
   <rect x="148" y="574" width="276" height="104" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
   <text x="178" y="613" fill="#1F1A17" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700">Ego4D</text>
-  <text x="178" y="647" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="17">open-world and additional</text>
-  <text x="178" y="670" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="17">state-change coverage</text>
+  <text x="178" y="647" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="16" textLength="210" lengthAdjust="spacingAndGlyphs">open-world and additional</text>
+  <text x="178" y="668" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="16" textLength="200" lengthAdjust="spacingAndGlyphs">state-change coverage</text>
 
   <!-- OSCaR Pipeline -->
   <rect x="528" y="444" width="496" height="80" rx="20" fill="#FFF8F0" stroke="#D9C5B0"/>
-  <text x="558" y="491" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">Frame composites + state-change captions</text>
+  <text x="558" y="491" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" textLength="440" lengthAdjust="spacingAndGlyphs">Frame composites + state-change captions</text>
   <rect x="528" y="542" width="496" height="80" rx="20" fill="#FFF8F0" stroke="#D9C5B0"/>
-  <text x="558" y="589" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">LLaVA fine-tuning manifests and eval splits</text>
+  <text x="558" y="589" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" textLength="440" lengthAdjust="spacingAndGlyphs">LLaVA fine-tuning manifests and eval splits</text>
   <rect x="528" y="640" width="496" height="80" rx="20" fill="url(#accent)"/>
-  <text x="558" y="687" fill="#FFF8F0" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">LoRA adapters + projector checkpoints</text>
+  <text x="558" y="687" fill="#FFF8F0" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" textLength="440" lengthAdjust="spacingAndGlyphs">LoRA adapters + projector checkpoints</text>
 
   <!-- Public Release -->
   <rect x="1128" y="444" width="324" height="86" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
-  <text x="1158" y="480" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">GitHub code</text>
-  <text x="1158" y="512" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="17">train, infer, eval, data prep, docs</text>
+  <text x="1158" y="480" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">GitHub code</text>
+  <text x="1158" y="510" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="16" textLength="280" lengthAdjust="spacingAndGlyphs">train, infer, eval, data prep, docs</text>
 
   <rect x="1128" y="548" width="324" height="86" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
-  <text x="1158" y="584" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">HF dataset</text>
-  <text x="1158" y="616" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="17">assets, manifests, metadata, splits</text>
+  <text x="1158" y="584" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">HF dataset</text>
+  <text x="1158" y="614" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="16" textLength="290" lengthAdjust="spacingAndGlyphs">assets, manifests, metadata, splits</text>
 
   <rect x="1128" y="652" width="324" height="86" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
-  <text x="1158" y="688" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">HF models</text>
-  <text x="1158" y="720" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="17">7B / 13B adapters and projectors</text>
+  <text x="1158" y="688" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">HF models</text>
+  <text x="1158" y="718" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="16" textLength="280" lengthAdjust="spacingAndGlyphs">7B / 13B adapters and projectors</text>
 
   <!-- Connector arrows -->
   <path d="M424 496H470C480 496 490 496 524 496" stroke="#9A3412" stroke-width="8" stroke-linecap="round"/>
@@ -95,7 +95,7 @@
   <path d="M1024 582H1060C1070 582 1080 582 1092 582" stroke="#9A3412" stroke-width="8" stroke-linecap="round"/>
 
   <!-- Footer text -->
-  <text x="800" y="800" text-anchor="middle" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="20">
+  <text x="800" y="800" text-anchor="middle" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="19" textLength="900" lengthAdjust="spacingAndGlyphs">
     Accepted NAACL paper, code, dataset, and model release for object state captioning in egocentric video
   </text>
 </svg>
