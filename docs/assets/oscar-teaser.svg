@@ -29,8 +29,8 @@
   <rect x="150" y="146" width="150" height="38" rx="19" fill="#F1D7BF"/>
   <text x="225" y="171" text-anchor="middle" fill="#7C2D12" font-family="Georgia, 'Times New Roman', serif" font-size="18" letter-spacing="2">NAACL 2024</text>
   <text x="150" y="234" fill="#1F1A17" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700">OSCaR</text>
-  <text x="152" y="278" fill="#5E5044" font-family="Georgia, 'Times New Roman', serif" font-size="28">Object State Captioning and State Change Representation</text>
-  <text x="152" y="309" fill="#5E5044" font-family="Georgia, 'Times New Roman', serif" font-size="28">for egocentric video</text>
+  <text x="152" y="274" fill="#5E5044" font-family="Georgia, 'Times New Roman', serif" font-size="26">Object State Captioning and</text>
+  <text x="152" y="305" fill="#5E5044" font-family="Georgia, 'Times New Roman', serif" font-size="26">State Change Representation for egocentric video</text>
 
   <g>
     <rect x="980" y="140" width="210" height="58" rx="16" fill="#FFF7ED" stroke="#D9C5B0"/>
@@ -63,28 +63,30 @@
   <text x="178" y="651" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="21">open-world and additional</text>
   <text x="178" y="678" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="21">state-change coverage</text>
 
-  <rect x="552" y="444" width="496" height="80" rx="20" fill="#FFF8F0" stroke="#D9C5B0"/>
-  <text x="582" y="493" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Frame composites + state-change captions</text>
-  <rect x="552" y="542" width="496" height="80" rx="20" fill="#FFF8F0" stroke="#D9C5B0"/>
-  <text x="582" y="591" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">LLaVA fine-tuning manifests and eval splits</text>
-  <rect x="552" y="640" width="496" height="80" rx="20" fill="url(#accent)"/>
-  <text x="582" y="689" fill="#FFF8F0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">LoRA adapters + projector checkpoints</text>
+  <rect x="552" y="444" width="496" height="86" rx="20" fill="#FFF8F0" stroke="#D9C5B0"/>
+  <text x="582" y="483" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Frame composites +</text>
+  <text x="582" y="514" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">state-change captions</text>
+  <rect x="552" y="548" width="496" height="86" rx="20" fill="#FFF8F0" stroke="#D9C5B0"/>
+  <text x="582" y="587" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">LLaVA fine-tuning</text>
+  <text x="582" y="618" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">manifests + eval splits</text>
+  <rect x="552" y="650" width="496" height="70" rx="20" fill="url(#accent)"/>
+  <text x="582" y="694" fill="#FFF8F0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">LoRA adapters + projector checkpoints</text>
 
   <rect x="1156" y="444" width="296" height="86" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
   <text x="1186" y="482" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">GitHub code</text>
-  <text x="1186" y="514" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="20">train, infer, eval, data prep, docs</text>
+  <text x="1186" y="514" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="18">train, infer, eval, data prep, docs</text>
 
   <rect x="1156" y="548" width="296" height="86" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
   <text x="1186" y="586" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">HF dataset</text>
-  <text x="1186" y="618" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="20">assets, manifests, metadata, splits</text>
+  <text x="1186" y="618" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="18">assets, manifests, metadata, splits</text>
 
   <rect x="1156" y="652" width="296" height="86" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
   <text x="1186" y="690" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">HF models</text>
-  <text x="1186" y="722" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="20">7B / 13B adapters and projectors</text>
+  <text x="1186" y="722" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="18">7B / 13B adapters and projectors</text>
 
-  <path d="M444 496H506C528 496 528 496 548 496" stroke="#9A3412" stroke-width="8" stroke-linecap="round"/>
+  <path d="M444 497H506C528 497 528 497 548 497" stroke="#9A3412" stroke-width="8" stroke-linecap="round"/>
   <path d="M444 626H506C528 626 528 626 548 626" stroke="#9A3412" stroke-width="8" stroke-linecap="round"/>
-  <path d="M1048 582H1110C1132 582 1132 582 1148 582" stroke="#9A3412" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1048 591H1110C1132 591 1132 591 1148 591" stroke="#9A3412" stroke-width="8" stroke-linecap="round"/>
 
   <text x="800" y="800" text-anchor="middle" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="22">
     Accepted NAACL paper, code, dataset, and model release for object state captioning in egocentric video
