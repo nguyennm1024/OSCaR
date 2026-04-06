@@ -9,6 +9,7 @@ import os
 from pathlib import Path
 
 from huggingface_hub import HfApi
+from huggingface_hub.errors import HfHubHTTPError
 
 
 STATE_FILENAME = ".hf_dataset_upload_state.json"
@@ -64,10 +65,6 @@ def main() -> None:
     parser.add_argument("--reset-state", action="store_true")
     args = parser.parse_args()
 
-    token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGING_FACE_HUB_TOKEN")
-    if not token:
-        raise RuntimeError("Set HF_TOKEN or HUGGING_FACE_HUB_TOKEN before running this script.")
-
     bundle_root = args.bundle_root.resolve()
     dataset_root = bundle_root / "release_repos" / "huggingface" / "datasets" / "llava-statechange-dataset"
     repo_id = f"{args.namespace}/{args.dataset_repo}"
@@ -77,8 +74,26 @@ def main() -> None:
         state_path.unlink()
 
     state = load_state(state_path)
-    api = HfApi(token=token)
-    api.create_repo(repo_id=repo_id, repo_type="dataset", exist_ok=True)
+    token = os.environ.get("HF_TOKEN") or os.environ.get("HUGGING_FACE_HUB_TOKEN")
+    api = HfApi(token=token) if token else HfApi()
+
+    try:
+        whoami = api.whoami()
+    except HfHubHTTPError as exc:
+        raise RuntimeError(
+            "Hugging Face authentication failed. Either export a valid HF_TOKEN in this shell "
+            "or run `hf auth login` before rerunning the uploader."
+        ) from exc
+
+    print(f"Authenticated as: {whoami['name']}")
+
+    try:
+        api.create_repo(repo_id=repo_id, repo_type="dataset", exist_ok=True)
+    except HfHubHTTPError as exc:
+        raise RuntimeError(
+            f"Failed to create or access dataset repo `{repo_id}`. "
+            "Verify that your token has write access to this account."
+        ) from exc
 
     ignore_patterns = [".cache/**", "**/.cache/**"]
 
