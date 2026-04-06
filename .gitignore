@@ -1,0 +1,72 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+build/
+dist/
+htmlcov/
+pip-wheel-metadata/
+
+# Local environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+ENV/
+
+# Logs and runtime state
+*.log
+logs/
+wandb/
+runs/
+tmp/
+temp/
+
+# Local cluster and launcher outputs
+slurm-*.out
+slurm-*.err
+result-*.out
+result-*.err
+controller.log
+model_worker*.log
+
+# Large training and dataset artifacts
+/checkpoints/
+/playground/data/
+/data/
+/datasets/
+/models/
+/weights/
+/output/
+/outputs/
+/results/
+/cache/
+/hf_cache/
+*.bin
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.h5
+
+# Keep documentation assets if they are added later
+!docs/**/*.png
+!docs/**/*.jpg
+!docs/**/*.jpeg
+!docs/**/*.svg

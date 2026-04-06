@@ -1,32 +1,59 @@
 # OSCaR: Object State Captioning and State Change Representation
 
-OSCaR aims to advance the field of object state captioning and state change representation by providing a benchmark dataset and evaluation framework. This project focuses on understanding and describing the state changes of objects within videos, a crucial aspect for numerous applications in computer vision and artificial intelligence.
+OSCaR is a benchmark and code release for studying object state captioning and
+state change representation in egocentric video.
 
-## Dataset Overview
+This repository is being prepared as the public codebase for:
 
-Our dataset is comprised of 500 videos, meticulously selected from the Ego4D and EPIC-KITCHENS datasets. Each video is accompanied by four detailed captions, thoroughly vetted through a stringent human verification process. This ensures the dataset's quality and reliability, making it an ideal benchmark for evaluating state-of-the-art models in object state captioning.
+- training and fine-tuning
+- inference and evaluation
+- data preparation utilities
+- reproducibility documentation
 
-### Evaluation Metrics
+The corresponding dataset and model weights are being organized as separate
+Hugging Face releases so the public code repository stays focused and usable.
 
-To facilitate a comprehensive and accurate performance assessment, we recommend the use of several text generation metrics, including:
+## Paper
 
-- BLEU
-- Rouge
-- LSA
+- NAACL 2024 paper: [OSCaR: Object State Captioning and State Change Representation](https://arxiv.org/abs/2402.17128)
 
-These metrics are essential for evaluating the quality of the generated captions in terms of their precision, recall, and semantic coherence.
+## Release Plan
 
-## Code and Dataset Release
+The public release is split into three parts:
 
-We are currently in the final stages of preparing the OSCaR code and dataset for release. Our team is committed to ensuring the highest standards of quality and usability. We believe in the importance of making our research accessible and reproducible, allowing the community to explore and expand upon our work.
+1. GitHub code repository
+2. Hugging Face dataset repository
+3. Hugging Face model repository or repositories
 
-We appreciate your interest and patience. The release of the code and dataset will be announced shortly.
+This repository is the code component of that release.
 
-For additional information and updates, please refer to our paper available [here](https://arxiv.org/abs/2402.17128).
+## Repository Goals
 
-### Citation
+- provide reproducible training and inference scripts
+- document the dataset and split structure used in experiments
+- make evaluation and state-change generation workflows easier to run
+- keep large assets out of GitHub and in the appropriate Hugging Face repos
 
-If our work aids your research, please consider citing it as follows:
+## Setup
+
+Environment guidance lives in [docs/setup.md](docs/setup.md).
+
+Release structure guidance lives in [docs/release-layout.md](docs/release-layout.md).
+
+Contribution guidance lives in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Current Status
+
+The repository has started public-release hardening. The next steps are:
+
+- import the cleaned training, inference, and evaluation code
+- remove private or cluster-specific assumptions from scripts
+- remove secrets and internal-only helper artifacts
+- document reproducible paths for model and dataset release
+
+## Citation
+
+If OSCaR is useful in your work, please cite:
 
 ```bibtex
 @inproceedings{nguyen2024oscar,
@@ -35,3 +62,4 @@ If our work aids your research, please consider citing it as follows:
   booktitle={North American Chapter of the Association for Computational Linguistics (NAACL)},
   year={2024}
 }
+```
