@@ -16,9 +16,12 @@ Recommended layout after cloning the code repo and downloading data:
 workspace/
   OSCaR/
   oscar-dataset/
+  oscar-llava-v1.5-13b-projector/
 ```
 
 The fine-tune scripts default `DATASET_ROOT` to `../oscar-dataset`.
+For released projector checkpoints, point `MM_PROJECTOR_PATH` to the downloaded
+Hugging Face projector repo.
 
 ## Projector Pretraining
 
@@ -34,10 +37,19 @@ Useful overrides:
 - `MODEL_NAME_OR_PATH`
 - `DEEPSPEED_CONFIG`
 
+If you want to start from the released projector checkpoint instead of
+re-pretraining it:
+
+```bash
+huggingface-cli download ali-vosoughi/oscar-llava-v1.5-13b-projector --local-dir ../oscar-llava-v1.5-13b-projector
+export MM_PROJECTOR_PATH=../oscar-llava-v1.5-13b-projector/mm_projector.bin
+```
+
 ## OSCaR-Only 13B LoRA Fine-Tuning
 
 ```bash
 DATASET_ROOT=../oscar-dataset \
+MM_PROJECTOR_PATH=../oscar-llava-v1.5-13b-projector/mm_projector.bin \
 bash scripts/train/finetune_v1_5_13b_oscar_lora.sh
 ```
 
@@ -54,7 +66,14 @@ This matches the paper/local hyperparameters:
 
 ```bash
 DATASET_ROOT=../oscar-dataset \
+MM_PROJECTOR_PATH=../oscar-llava-v1.5-7b-projector/mm_projector.bin \
 bash scripts/train/finetune_v1_5_7b_oscar_lora.sh
+```
+
+Download the released 7B projector with:
+
+```bash
+huggingface-cli download ali-vosoughi/oscar-llava-v1.5-7b-projector --local-dir ../oscar-llava-v1.5-7b-projector
 ```
 
 ## Mixed-Data 13B LoRA Fine-Tuning
@@ -64,6 +83,7 @@ This corresponds to the logged local run that used `llava_final.json`.
 ```bash
 DATASET_ROOT=../oscar-dataset \
 DATA_PATH=../oscar-dataset/manifests/llava_final.json \
+MM_PROJECTOR_PATH=../oscar-llava-v1.5-13b-projector/mm_projector.bin \
 bash scripts/train/finetune_v1_5_13b_mixed_lora.sh
 ```
 

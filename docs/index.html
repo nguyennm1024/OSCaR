@@ -235,7 +235,27 @@
           </article>
           <article class="card">
             <h3>Weights</h3>
-            <p>Projector checkpoints, adapter repos, and merged-model export workflow aligned with the reported training setup.</p>
+            <p>Released projector checkpoints and LoRA adapter repos, plus code to build merged models locally if needed.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel section">
+        <h2>Most Common Workflows</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Run A Released Model</h3>
+            <p><span class="mono">huggingface-cli download ali-vosoughi/oscar-llava-v1.5-13b-oscar-adapter --local-dir ../oscar-llava-v1.5-13b-oscar-adapter</span></p>
+            <p>Then load it with <span class="mono">--model-base lmsys/vicuna-13b-v1.5</span>.</p>
+          </article>
+          <article class="card">
+            <h3>Use The Dataset</h3>
+            <p><span class="mono">huggingface-cli download ali-vosoughi/oscar-dataset --repo-type dataset --local-dir ../oscar-dataset</span></p>
+            <p>Use <span class="mono">DATASET_ROOT=../oscar-dataset</span> and <span class="mono">PATH_PREFIX=$DATASET_ROOT/data</span>.</p>
+          </article>
+          <article class="card">
+            <h3>Reproduce Training</h3>
+            <p>Download a released projector repo, point <span class="mono">MM_PROJECTOR_PATH</span> to <span class="mono">mm_projector.bin</span>, then run the public fine-tune scripts.</p>
           </article>
         </div>
       </section>
@@ -284,6 +304,7 @@
         <p>Download the Hugging Face dataset locally, set <span class="mono">DATASET_ROOT</span>, then use the preserved manifests and splits with the public train and eval scripts.</p>
         <p class="mono">huggingface-cli download ali-vosoughi/oscar-dataset --repo-type dataset --local-dir ../oscar-dataset</p>
         <p class="mono">export DATASET_ROOT=../oscar-dataset</p>
+        <p class="mono">export PATH_PREFIX="$DATASET_ROOT/data"</p>
         <p>The main entry files are <span class="mono">manifests/llava_data.json</span>, <span class="mono">splits/data_mapping_final_EK_test.csv</span>, and <span class="mono">metadata/segment_index.csv</span>.</p>
         <p><a href="https://github.com/nguyennm1024/OSCaR/blob/main/TRAIN.md">Training guide</a> and <a href="https://github.com/nguyennm1024/OSCaR/blob/main/EVAL.md">evaluation guide</a>.</p>
       </section>

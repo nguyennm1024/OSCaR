@@ -35,6 +35,35 @@ Released weights are:
 
 Merged full-model checkpoints are not part of the current OSCaR release.
 
+## Common Workflows
+
+If you want to run the released 13B model:
+
+```bash
+huggingface-cli download ali-vosoughi/oscar-llava-v1.5-13b-oscar-adapter --local-dir ../oscar-llava-v1.5-13b-oscar-adapter
+python -m llava.serve.cli \
+  --model-path ../oscar-llava-v1.5-13b-oscar-adapter \
+  --model-base lmsys/vicuna-13b-v1.5 \
+  --image-file /path/to/image.jpg
+```
+
+If you want to use the released dataset:
+
+```bash
+huggingface-cli download ali-vosoughi/oscar-dataset --repo-type dataset --local-dir ../oscar-dataset
+export DATASET_ROOT=../oscar-dataset
+export PATH_PREFIX="$DATASET_ROOT/data"
+```
+
+If you want to reproduce OSCaR fine-tuning:
+
+```bash
+huggingface-cli download ali-vosoughi/oscar-llava-v1.5-13b-projector --local-dir ../oscar-llava-v1.5-13b-projector
+DATASET_ROOT=../oscar-dataset \
+MM_PROJECTOR_PATH=../oscar-llava-v1.5-13b-projector/mm_projector.bin \
+bash scripts/train/finetune_v1_5_13b_oscar_lora.sh
+```
+
 ## Project Overview
 
 OSCaR studies object state captioning and state change representation for
