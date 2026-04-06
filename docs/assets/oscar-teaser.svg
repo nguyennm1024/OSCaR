@@ -54,35 +54,36 @@
   <text x="1156" y="414" fill="#7C2D12" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="1.6">PUBLIC RELEASE</text>
 
   <rect x="148" y="444" width="296" height="104" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
-  <text x="178" y="483" fill="#1F1A17" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">EPIC-KITCHENS</text>
-  <text x="178" y="521" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="21">egocentric action data and</text>
-  <text x="178" y="548" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="21">human-verified benchmark split</text>
+  <text x="178" y="479" fill="#1F1A17" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700">EPIC-KITCHENS</text>
+  <text x="178" y="515" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="19">egocentric action data and</text>
+  <text x="178" y="541" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="19">human-verified benchmark split</text>
 
   <rect x="148" y="574" width="296" height="104" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
-  <text x="178" y="613" fill="#1F1A17" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">Ego4D</text>
-  <text x="178" y="651" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="21">open-world and additional</text>
-  <text x="178" y="678" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="21">state-change coverage</text>
+  <text x="178" y="611" fill="#1F1A17" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700">Ego4D</text>
+  <text x="178" y="647" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="19">open-world and additional</text>
+  <text x="178" y="673" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="19">state-change coverage</text>
 
   <rect x="552" y="444" width="496" height="86" rx="20" fill="#FFF8F0" stroke="#D9C5B0"/>
-  <text x="582" y="483" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Frame composites +</text>
-  <text x="582" y="514" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">state-change captions</text>
+  <text x="582" y="482" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Frame composites +</text>
+  <text x="582" y="511" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">state-change captions</text>
   <rect x="552" y="548" width="496" height="86" rx="20" fill="#FFF8F0" stroke="#D9C5B0"/>
-  <text x="582" y="587" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">LLaVA fine-tuning</text>
-  <text x="582" y="618" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">manifests + eval splits</text>
+  <text x="582" y="586" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">LLaVA fine-tuning</text>
+  <text x="582" y="615" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">manifests + eval splits</text>
   <rect x="552" y="650" width="496" height="70" rx="20" fill="url(#accent)"/>
-  <text x="582" y="694" fill="#FFF8F0" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">LoRA adapters + projector checkpoints</text>
+  <text x="582" y="679" fill="#FFF8F0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">LoRA adapters + projector</text>
+  <text x="582" y="705" fill="#FFF8F0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">checkpoints</text>
 
   <rect x="1156" y="444" width="296" height="86" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
   <text x="1186" y="482" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">GitHub code</text>
-  <text x="1186" y="514" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="18">train, infer, eval, data prep, docs</text>
+  <text x="1186" y="514" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="17">train, infer, eval, data prep, docs</text>
 
   <rect x="1156" y="548" width="296" height="86" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
   <text x="1186" y="586" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">HF dataset</text>
-  <text x="1186" y="618" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="18">assets, manifests, metadata, splits</text>
+  <text x="1186" y="618" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="17">assets, manifests, metadata, splits</text>
 
   <rect x="1156" y="652" width="296" height="86" rx="22" fill="#FFF8F0" stroke="#D9C5B0"/>
   <text x="1186" y="690" fill="#1F1A17" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">HF models</text>
-  <text x="1186" y="722" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="18">7B / 13B adapters and projectors</text>
+  <text x="1186" y="722" fill="#5E5044" font-family="Arial, Helvetica, sans-serif" font-size="17">7B / 13B adapters and projectors</text>
 
   <path d="M444 497H506C528 497 528 497 548 497" stroke="#9A3412" stroke-width="8" stroke-linecap="round"/>
   <path d="M444 626H506C528 626 528 626 548 626" stroke="#9A3412" stroke-width="8" stroke-linecap="round"/>
