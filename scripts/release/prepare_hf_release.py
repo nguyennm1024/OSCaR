@@ -145,6 +145,24 @@ EPIC-KITCHENS and Ego4D source datasets.
 OSCaR is a derived dataset release built on top of frames and clips sourced from
 EPIC-KITCHENS and Ego4D.
 
+## Quick Use
+
+1. Download the dataset repo locally.
+2. Set `DATASET_ROOT` to that checkout.
+3. Use `manifests/llava_data.json` for training and `splits/data_mapping_final_EK_test.csv` for the held-out benchmark split.
+
+```bash
+huggingface-cli download {namespace}/{dataset_repo} --repo-type dataset --local-dir ../oscar-dataset
+export DATASET_ROOT=../oscar-dataset
+bash scripts/train/finetune_v1_5_13b_oscar_lora.sh
+```
+
+Useful entry files:
+
+- `metadata/segment_index.csv`
+- `manifests/llava_data.json`
+- `splits/data_mapping_final_EK_test.csv`
+
 ## Directory Layout
 
 ```text

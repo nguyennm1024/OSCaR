@@ -242,6 +242,15 @@
       </section>
 
       <section class="panel section">
+        <h2>Use The Dataset</h2>
+        <p>Download the Hugging Face dataset locally, set <span class="mono">DATASET_ROOT</span>, then use the preserved manifests and splits with the public train and eval scripts.</p>
+        <p class="mono">huggingface-cli download ali-vosoughi/oscar-dataset --repo-type dataset --local-dir ../oscar-dataset</p>
+        <p class="mono">export DATASET_ROOT=../oscar-dataset</p>
+        <p>The main entry files are <span class="mono">manifests/llava_data.json</span>, <span class="mono">splits/data_mapping_final_EK_test.csv</span>, and <span class="mono">metadata/segment_index.csv</span>.</p>
+        <p><a href="https://github.com/nguyennm1024/OSCaR/blob/main/TRAIN.md">Training guide</a> and <a href="https://github.com/nguyennm1024/OSCaR/blob/main/EVAL.md">evaluation guide</a>.</p>
+      </section>
+
+      <section class="panel section">
         <h2>Quickstart</h2>
         <p>Install the public environment with UV:</p>
         <p class="mono">uv venv --python 3.10 .venv && source .venv/bin/activate && uv pip install -e .[train,inference,eval,release]</p>

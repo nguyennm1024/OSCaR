@@ -1,6 +1,6 @@
 # OSCaR: Object State Captioning and State Change Representation
 
-Accepted NAACL 2024 paper: [NAACL 2024 Findings version](https://aclanthology.org/2024.findings-naacl.226/)
+Accepted NAACL 2024 paper: [ACL Anthology page](https://aclanthology.org/2024.findings-naacl.226/)
 
 Project page: [nguyennm1024.github.io/OSCaR](https://nguyennm1024.github.io/OSCaR/)
 
@@ -50,6 +50,22 @@ Model repos:
 OSCaR is built from clips and frames sourced from these egocentric video
 datasets. The public OSCaR dataset release should be understood as a derived
 release built on top of EPIC-KITCHENS and Ego4D assets.
+
+## Use The Dataset
+
+1. Download the HF dataset repo locally.
+2. Point OSCaR to it with `DATASET_ROOT`.
+3. Use `manifests/llava_data.json` for training and `splits/data_mapping_final_EK_test.csv` for the held-out benchmark split.
+
+```bash
+huggingface-cli download ali-vosoughi/oscar-dataset --repo-type dataset --local-dir ../oscar-dataset
+export DATASET_ROOT=../oscar-dataset
+bash scripts/train/finetune_v1_5_13b_oscar_lora.sh
+```
+
+For evaluation and inspection, the most useful entry files are
+`metadata/segment_index.csv`, `manifests/llava_data.json`, and
+`splits/data_mapping_final_EK_test.csv`.
 
 ## Authors
 
